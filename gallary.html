@@ -70,6 +70,20 @@ footer{
 <footer>
 © 2026 Unity251
 </footer>
-
+<script>
+document.querySelectorAll(".gallery img").forEach(img => {
+  img.style.cursor = "pointer";
+  img.onclick = function () {
+    const w = window.open("");
+    w.document.write(`
+      <html>
+      <body style="margin:0;background:#000;display:flex;justify-content:center;align-items:center;height:100vh;">
+        <img src="${this.src}" style="max-width:100%;max-height:100%;">
+      </body>
+      </html>
+    `);
+  };
+});
+</script>
 </body>
 </html>
