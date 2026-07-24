@@ -390,6 +390,28 @@ Unity251 is a platform dedicated to sharing Ethiopia's history, culture, faith, 
         <a href="contact.html">አግኙን</a>
     </p>
 </footer>
+.search-box{
+    text-align:center;
+    margin:20px;
+}
+.search-box input{
+    padding:10px;
+    width:220px;
+}
+.search-box button{
+    padding:10px 15px;
+}
+<script>
+function searchSite() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let body = document.body.innerText.toLowerCase();
 
+    if (body.includes(input)) {
+        alert("ተገኝቷል: " + input);
+    } else {
+        alert("አልተገኘም!");
+    }
+}
+</script>
 </body>
 </html>
