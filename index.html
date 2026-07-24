@@ -267,13 +267,33 @@ a,
 li,
 span {
     color: #FFD700;
+.search-box{
+    text-align:center;
+    margin:20px;
 }
+
+.search-box input{
+    padding:10px;
+    width:220px;
+    border-radius:5px;
+}
+
+.search-box button{
+    padding:10px 15px;
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
 </style>
 </head>
 
 <body>
-
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="ፈልግ...">
+    <button onclick="searchSite()">ፈልግ</button>
+</div>
 <header><img src="file_00000000bc9471f4bbff8099cb049d67.png" alt="Unity251 Logo">
 <h1>Unity251</h1>
 <p>የኢትዮጵያ ባህል፣ ታሪክ፣ ሀይማኖት እና ቱሪዝም</p>
@@ -281,10 +301,7 @@ span {
 <div style="text-align:right; padding:10px 20px;">
   <button onclick="setLanguage('am')">🇪🇹 አማርኛ</button>
   <button onclick="setLanguage('en')">🇬🇧 English</button>
-</div> class="search-box">
-    <input type="text" id="searchInput" placeholder="ፈልግ...">
-    <button onclick="searchSite()">ፈልግ</button>
-</div>
+
 <section class="intro">
 <h2>አማርኛ</h2>
 <p>
@@ -403,7 +420,6 @@ function searchSite() {
     } else {
         alert("አልተገኘም!");
     }
-}
 </script>
 </body>
 </html>
