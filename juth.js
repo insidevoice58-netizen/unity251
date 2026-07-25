@@ -45,7 +45,7 @@ if (loginBtn) {
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
         alert("እንኳን ደህና መጡ!");
-        window.location.href = "index.html";
+        window.location.href = "profile.html";
       })
       .catch((error) => {
         alert(error.message);
