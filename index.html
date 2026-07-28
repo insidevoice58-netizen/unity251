@@ -106,10 +106,14 @@ nav a:hover{
     transform:translateY(-3px);
 }
 .menu-toggle{
-    display:none;
+    display:block;
     font-size:30px;
     color:white;
+    background:#198754;
+    padding:10px;
+    text-align:center;
     cursor:pointer;
+
 }
 
 @media (max-width:768px){
@@ -118,11 +122,13 @@ nav a:hover{
         text-align:center;
         padding:10px;
     }
-
-    nav{
-        display:none;
-        flex-direction:column;
-        gap:10px;
+   nav{
+    display:none;
+    flex-direction:column;
+    background:#111;
+    width:100%;
+    text-align:center;
+    padding:15px; 
     }
 
     nav.active{
