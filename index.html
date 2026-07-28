@@ -452,14 +452,43 @@ nav{
 display:none;
 flex-direction:column;
 }
-
 nav.active{
 display:flex;
 }
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#161b22;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px 0;
+    border-top:2px solid #FFD700;
+    z-index:9999;
+}
 
+.bottom-nav a{
+    color:#FFD700;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:12px;
+}
+
+.bottom-nav a:hover{
+    color:#198754;
+}
+
+body{
+    padding-bottom:80px;
+}
 </style>
 </head>
 <body>
+<div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="ፈልግ...">
     <button onclick="searchSite()">ፈልግ</button>
@@ -694,6 +723,11 @@ function toggleMenu() {
     document.querySelector("nav").classList.toggle("active");
 }
 </script>
-
+<nav class="bottom-nav">
+    <a href="index.html">🏠<span>መነሻ</span></a>
+    <a href="photos.html">🖼<span>ፎቶ</span></a>
+    <a href="video.html">🎥<span>ቪዲዮ</span></a>
+    <a href="profile.html">👤<span>Profile</span></a>
+</nav>
 </body>
 </html>
