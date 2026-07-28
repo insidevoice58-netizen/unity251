@@ -19,7 +19,7 @@
 }
 
 body{
-    font-family:Arial,sans-serif;
+    font-family:Arial,sans-8;
     background:#fff8e7;
     color: #333333;
     line-height:1.7;
@@ -105,7 +105,30 @@ nav a:hover{
     color:#fff3cd;
     transform:translateY(-3px);
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
 
+@media (max-width:768px){
+    .menu-toggle{
+        display:block;
+        text-align:center;
+        padding:10px;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+}
 .hero{
     padding:80px 20px;
     text-align:center;
