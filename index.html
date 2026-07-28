@@ -352,7 +352,7 @@ span {
 }
 
 .menu a{
-    color:white;
+    color:white;ቹ
     text-decoration:none;
     margin:10px;
     font-weight:bold;
@@ -481,7 +481,14 @@ display:flex;
 .bottom-nav a:hover{
     color:#198754;
 }
+.bottom-nav a.active{
+    color:#198754;
+    font-weight:bold;
+}
 
+.bottom-nav a.active span{
+    color:#198754;
+}
 body{
     padding-bottom:80px;
 }
@@ -723,7 +730,7 @@ function toggleMenu() {
 }
 </script>
 <nav class="bottom-nav">
-    <a href="index.html">🏠<span>መነሻ</span></a>
+    <a href="index.html" class="active">🏠<span>መነሻ</span></a>
     <a href="photos.html">🖼<span>ፎቶ</span></a>
     <a href="video.html">🎥<span>ቪዲዮ</span></a>
     <a href="profile.html">👤<span>Profile</span></a>
