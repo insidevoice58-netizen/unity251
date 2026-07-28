@@ -381,8 +381,13 @@ Unity251 የኢትዮጵያ ታሪክ፣ ባህል፣ እምነት፣ ቱሪዝ�
 Unity251 is a platform dedicated to sharing Ethiopia's history, culture, faith, tourism, and educational content in both Amharic and English.
 </p>
 <p>
-
 </section>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav>
+    <a href="prayers.html">📖 የዕለት ጸሎቶች</a>
+    <a href="index.html">🏠 መነሻ</a>
+</nav>
 <nav>
 <a href="prayers.html">📖 የጸሎት መጽሐፍት</a>
   <a href="index.html">🏠 መነሻ</a>
@@ -581,6 +586,8 @@ function setLanguage(lang) {
     document.querySelectorAll('.en').forEach(el => {
         el.style.display = (lang === 'en') ? '' : 'none';
     });
+function toggleMenu() {
+    document.querySelector("nav").classList.toggle("active");
 }
 </script>
 
