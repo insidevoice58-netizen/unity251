@@ -31,4 +31,15 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
     alert("Logout ተሳክቷል።");
     window.location.href = "login.html";
   });
-});
+}
+</script>
+
+<nav class="bottom-nav">
+    <a href="index.html">🏠<span>መነሻ</span></a>
+    <a href="photos.html">🖼️<span>ፎቶ</span></a>
+    <a href="video.html">🎥<span>ቪዲዮ</span></a>
+    <a href="profile.html" class="active">👤<span>ፕሮፋይል</span></a>
+</nav>
+
+</body>
+</html>
